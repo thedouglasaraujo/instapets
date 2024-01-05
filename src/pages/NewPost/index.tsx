@@ -1,5 +1,5 @@
-import Modal from "../../components/Modal";
+import NewPostButton from "../../components/NewPostButton";
 
 export default function NewPostPage() {
-  return <Modal />;
+  return <NewPostButton />;
 }
