@@ -1,3 +1,4 @@
+import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import LoginPage from "./pages/Login";
 import SignupPage from "./pages/Signup";
@@ -12,3 +13,5 @@ function App() {
     </Routes>
   );
 }
+
+export default App;
