@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Modal from "../../components/Modal";
-import Post from "../../components/Post";
+import Modal from "../Modal";
+import Post from "../Post";
 import AddIcon from '@material-ui/icons/Add';
 import "./styles.css";
 
@@ -27,7 +27,11 @@ export default function NewPostButton() {
 
     return (
         <div className="new-post">
-            <button className="add-post-button" onClick={handleOpenModal}>
+            <button
+                className="add-post-button"
+                onClick={handleOpenModal}
+                disabled={isModalOpen}
+            >
                 Criar novo post <span><AddIcon /></span>
             </button>
             <div className="modal">
